@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Blog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+      <main class="content">
+        <div class="container sub__header ">
+          @@include('blocks/breadcrumps.html', {
+            "mainTitle": "Blog"
+          })
+          <li class="breadcrumps__item"><a href="Blog.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys-V2">Blog</p></a></li>
+        </div>
+        <section class="container blog__content">
+          <ul class="blogs__items">
+            <li class="blog__item1 blog__item">
+              <img src="img/firstbl.jpg" alt="lego" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Top 5 fastest growing it service companies in philly",
+              "infText": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace."
+             })
+            </li>
+            <li class="blog__item">
+              <img src="img/secondbl.jpg" alt="soft-toys" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Best financial",
+              "infText": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+             })
+            </li>
+            <li class="blog__item3">
+              <img src="img/thirdbl.jpg" alt="lego-toys" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Company logo or brand identity: which one is more important? brand identity",
+              "infText": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+             })
+            </li>
+            <li class="blog__item">
+              <img src="img/fourthbl.jpg" alt="bass" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Best financial",
+              "infText": "Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+             })
+            </li>
+            <li class="blog__item">
+              <img src="img/fifthbl.jpg" alt="princess" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Company logo or brand identity: which one is more important? brand identity",
+              "infText": "To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+             })
+            </li>
+            <li class="blog__item3">
+              <img src="img/sixthbl.jpg" alt="diamonds" width="380" height="220">
+              @@include('blocks/blogItems.html', {
+              "textH": "Top 5 fastest growing it service companies in philly",
+              "infText": "Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace."
+             })
+            </li>
+          </ul>
+        </section>
+        <div class="container pages__nam-blog">
+        <a href="Toys.html"><i class="pagin-left two__arrow"></i></a>
+       @@include('blocks/pagination.html')
+        <a href="ContactUs.html"><i class="pagin-right two__arrow"></i></a>
+       </div>
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js" defer></script>
+  </body>
+</html>

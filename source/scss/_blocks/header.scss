@@ -1,0 +1,91 @@
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-left: -2px;
+}
+
+.header__list {
+  display: flex;
+  margin-top: 45px;
+  margin-right: 660px;
+}
+
+.header__list__item {
+  margin-right: 20px;
+}
+
+.header__list__item a { 
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.header__contact {
+  display: flex;
+  align-items: center;
+}
+
+.header__contact__item a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #1E0606;
+}
+
+.search {
+    margin-top: 47px;
+    margin-right: 24px;
+    margin-left: 0px;
+}
+
+.header__contact__contactus {
+  margin-top: 45px;
+  
+}
+
+.logo:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.logo:active {
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+.header__list__item:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.header__list__item:active {
+    text-decoration: none;
+    opacity: 0.3;
+}
+
+.header__contact__item:hover {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.header__contact__item:active {
+    text-decoration: none;
+    opacity: 0.3;
+}
+

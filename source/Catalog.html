@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Catalog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+      <main class="content">
+        <div class="container sub__header ">
+          @@include('blocks/breadcrumps.html', {
+            "mainTitle": "Category Products"
+          })
+          <li class="breadcrumps__item"><a href="Catalog.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys-V2">Catalog</p></a></li>
+        </div>
+        <div class="container">
+          <ul class="all__products">
+            <li class="all__products-item-first">
+              <a href="#" class="all__products-item-first-img"><img src="img/apparelkids.jpg" alt="apparelkids" width="280" height="270"></a>
+              <a href="#" class="all__products-item-first-title">apparel kids</a>
+            </li>
+            <li class="all__products-item-second">
+              <a href="#" class="all__products-item-second-img"><img src="img/holidayshop.jpg" alt="holidayshop" width="280" height="270"></a>
+              <a href="#" class="all__products-item-second-title">holiday shop</a>
+            </li>
+            <li class="all__products-item-third">
+              <a href="Toys.html" class="all__products-item-third-img"><img src="img/toys.jpg" alt="toys" width="280" height="270"></a>
+              <a href="Toys.html" class="all__products-item-third-title">toys</a>
+            </li>
+            <li class="all__products-item-fourth">
+              <a href="#" class="all__products-item-fourth-img"><img src="img/accessories.jpg" alt="accessories" width="280" height="270"></a>
+              <a href="#" class="all__products-item-fourth-title">accessories</a>
+              </li>
+            <li class="all__products-item-fifth">
+              <a href="#" class="all__products-item-fifth-img"><img src="img/sale.jpg" alt="sale" width="280" height="270"></a>
+              <a href="#" class="all__products-item-fifth-title">sale</a>
+            </li>
+            <li class="all__products-item-sisxth">
+              <a href="#" class="all__products-item-sisxth-img"><img src="img/appareladults.jpg" alt="appareladults" width="280" height="270"></a>
+              <a href="#" class="all__products-item-sisxth-title">apparel adults</a>
+            </li>
+          </ul>
+        </div>
+        <section class="container product__description">
+          <h4>Product Description</h4>
+          <p class="product__description-firstp">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+          <p class="product__description-secondp">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+          <p class="product__description-thirdp">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+      </section>
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js" defer></script>
+  </body>
+</html>
