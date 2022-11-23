@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Toys</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <div class="wrapper">
+      <main class="content">
+        <div class="container sub__header ">
+          <h1>Toy for kids</h1>
+          <ul class="breadcrumps">
+            <li class="breadcrumps__item"><a href="index.html"><p class="breadcrumps__item-text breadcrumps__item-home">Home</p></a></li>
+            <li class="breadcrumps__item"><a href="Catalog.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys">Catalog</p></a></li>
+            <li class="breadcrumps__item"><a href="Toys.html"><p class="breadcrumps__item-text breadcrumps__item-toys">Toys</p></a></li>
+          </ul>
+        </div>
+        <div class="for__bg__forms">
+        <div class="container forms">
+        <div>
+        <div class="range__form">
+          <p class="cost">Cost</p>
+          <input type="range" min="0" max="500" step="1" value="105">
+          <ul class="range__subnumber">
+            <li class="zero">0</li>
+            <li>500</li>
+          </ul>
+        </div>
+        </div>
+        <div class="colors__checkboxes">
+          <p>Color</p>
+          <ul>
+            <li class="check-black">
+              <input type="checkbox" class="custom-checkbox" id="black" name="black" value="yes">
+              <label for="black" class="consent-text">Black</label>
+            </li>
+            <li class="check-blue">
+              <input type="checkbox" class="custom-checkbox" id="blue" name="blue" value="yes">
+              <label for="blue" class="consent-text">Blue</label>
+            </li>
+            <li class="check-green">
+              <input type="checkbox" class="custom-checkbox" id="green" name="green" value="yes">
+              <label for="green" class="consent-text">Green</label>
+            </li>
+            <li class="check-white">
+              <input type="checkbox" class="custom-checkbox" id="white" name="white" value="yes">
+              <label for="white" class="consent-text">White</label>
+            </li>
+          </ul>
+        </div>
+        <div class="delivery__radios">
+          <p>Delivery</p>
+          <ul>
+            <li class="shipping-free">
+              <input type="radio" class="custom-radio" name="selector" id="selector-1" value="free">
+              <label for="selector-1">Free shipping</label> 
+            </li>
+            <li class="shipping-fast">
+              <input type="radio" class="custom-radio" name="selector" id="selector-2" value="fast">
+              <label for="selector-2">Fast shipping</label>
+            </li>
+          </ul>
+        </div>
+        <div class="amount__radios">
+          <p>Amount</p>
+          <ul>
+            <li class="form_radio_btn">
+              <input id="radio-1" type="radio" name="radio" value="1">
+              <label for="radio-1">0-5</label>
+            </li>
+            <li class="form_radio_btn-different">
+              <input id="radio-2" type="radio" name="radio" value="2">
+              <label for="radio-2">10-20</label>
+            </li>
+            <li class="form_radio_btn-different">
+              <input id="radio-3" type="radio" name="radio" value="3">
+              <label for="radio-3">20-50</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button type="button" class="btn apply-btn__toys">APPLY</button>
+        </div>
+        </div>
+        </div>
+        <div class="container">
+          <ul class="toys__catalog">
+            <li class="first__position">
+              <div class="shark__position">
+                <a href="#"><img src="img/shark.png" alt=""></a>
+              <div class="shark__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "SHARKY BEAN BAG CHAIR COVER",
+                "whatCost": "$60.00 USD"
+              })
+            </li>
+            <li class="second__position">
+              <div class="brass__position">
+                <a href="#"><img src="img/brass.png" alt=""></a>
+              <div class="brass__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "BRASS DECO FRAMES",
+                "whatCost": "$66.00 USD"
+              })
+            </li>
+            <li class="third__position">
+              <div class="cibo__position">
+                <a href="#"><img src="img/cibo.png" alt=""></a>
+              <div class="cibo__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "CIBO FULL APRON",
+                "whatCost": "$60.00 USD"
+              })
+            </li>
+            <li class="fourth__position">
+              <div class="gatcha__position">
+                <a href="#"><img src="img/gatcha.png" alt=""></a>
+              <div class="gatcha__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "GATCHA GATCHA GUMBALL MACHINE",
+                "whatCost": "$56.00 USD"
+              })
+            </li>
+            <li class="fifth__position">
+              <div class="christmas__position">
+                <a href="#"><img src="img/christmas.png" alt=""></a>
+              <div class="christmas__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "CHRISTMAS ADVENT SCENTED CANDLE",
+                "whatCost": "$29.00 USD"
+              })
+            </li>
+            <li class="sixth__position">
+              <div class="tangle__position">
+                <a href="#"><img src="img/tangle.png" alt=""></a>
+              <div class="tangle__more"><a href="#"><span>Learn More</span></a></div>
+              </div>
+              @@include('blocks/toysCatalogText.html', {
+                "whatProduct": "TANGLE SPINNING TEA LIGHT",
+                "whatCost": "$56.00 USD"
+              })
+            </li>
+          </ul>
+        </div>
+        <div class="container pages__nam">
+          <a href="Catalog.html"><i class="pagin-left two__arrow"></i></a>
+        @@include('blocks/pagination.html')
+        <a href="Blog.html"><i class="pagin-right two__arrow"></i></a>
+        </div>
+      </main>
+        @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js"></script>
+    <script src="js/range.js"></script>
+  </body>
+</html>
