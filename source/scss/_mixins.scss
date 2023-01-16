@@ -1,0 +1,54 @@
+@mixin title-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #1E0606;
+  @media (max-width: 992px) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+  @media (max-width: 1180px) {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}
+
+@mixin product-list-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@mixin some-text {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1E0606;
+  @media (max-width: 992px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@mixin italic-sub-title {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  color: #1E0606;
+  @media (max-width: 992px) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+}

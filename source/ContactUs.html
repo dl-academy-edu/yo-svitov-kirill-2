@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Contact Us</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html', {
+      "logo": "logo",
+      "list": "header__list",
+      "search": "search",
+      "contactus": "header__contact-contactus"
+    })
+    <div class="wrapper">
+      <main class="content">
+        <div class="container breadcrumps-wrap">
+          @@include('blocks/breadcrumps.html', {
+            "mainTitle": "Category Products",
+            "title": "breadcrumps__title"
+          })
+          <li class="breadcrumps__item"><a href="ContactUs.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys-V2">Contact us</p></a></li>
+        </div>
+        <div class="container main-inf-page">
+          <div class="text-right-side">
+            <p class="text-1">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            <p class="text-2">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            <p class="text-3">An expert is waiting to help you!</p>
+          </div>
+          <div class="popup">
+            <form class="popup-form">
+              <div class="label-wrapper">
+                <label for="input-name">Name</label>
+                <input class="input-first-name" type="text" id="input-name" placeholder="Ivan Ivanov">
+              </div>
+              <div class="label-wrapper__for-two-sec">
+              <div class="wrapper-phone">
+                <label for="input-phone">Phone</label>
+                <input class="input-phone" type="tel" id="input-phone">
+              </div>
+              <div class="wrapper-email">
+                <label for="input-email">Email</label>
+                <input class="input-email" type="email" id="input-email">
+              </div>
+              </div>
+              <div class="label-wrapper-message">
+                <label>Message</label>
+                <textarea class="input-message"></textarea>
+              </div>
+              <div class="wrapper-consent">
+                <input type="checkbox" class="custom-checkbox_contactus" id="happy" name="happy" value="yes">
+                <label for="happy" class="consent-text">By clicking on the button, you consent to the processing of your personal data</label>
+               </div>
+               <div class="submit-end">
+                <button type="button" class="btn submit">Submit</button>
+                </div>
+            </form>
+          </div>
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js" defer></script>
+    <script src="js/burger.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+  </body>
+</html>
