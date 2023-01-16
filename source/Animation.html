@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Animation</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html', {
+      "logo": "logo",
+      "list": "header__list",
+      "search": "search",
+      "contactus": "header__contact-contactus"
+    })
+    <div class="wrapper">
+      <main class="content">
+        <div class="container">
+          @@include('blocks/breadcrumps.html', {
+            "mainTitle": "Animation scene",
+            "title": "breadcrumps__title-animaiton"
+          })
+          <li class="breadcrumps__item"><a href="Catalog.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys-V2">Animation</p></a></li>
+        </div>
+        <div class="animation-main">
+          <div class="animation-main-clouds">
+            <img src="./img/clouds.png" alt="clouds">
+          </div>
+          <div class="animation-background">
+          <div class="animation-main-background">
+            <img src="./img/otherElements.png" alt="main-background" width="1550" height="768">
+            <div class="car-taxi">
+              <img src="./img/carTaxi.png" alt="taxi">
+            </div>
+          </div>
+          <div class="people-message">
+          <div class="animation-woman">
+            <img src="./img/Body.png" alt="animaiton-woman">
+          </div>
+          <div class="suitcases">
+            <img src="./img/Suitcases.png" alt="suitcases">
+          </div>
+          <div class="message-woman">
+            <img src="./img/messageWoman.png" alt="messageWoman">
+          </div>
+          <div class="man-body">
+            <img src="./img/man.png" alt="man-body">
+          </div>
+          <div class="man-arm">
+            <img src="./img/manArm.png" alt="man-arm">
+          </div>
+          <div class="people-message__man-first">
+            <img src="./img/messageManFirst.png" alt="man-message" width="160" height="77">
+          </div>
+          <div class="people-message__man-second">
+            <img src="./img/messageManSecond.png" width="160" height="77">
+          </div>
+          </div>
+          <div class="message-taxi">
+            <img src="./img/mesasgeTaxi.png" width="160" height="100">
+          </div>
+          
+          </div>
+        </div>
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Catalog</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    @@include('blocks/header.html', {
+      "logo": "logo",
+      "list": "header__list",
+      "search": "search",
+      "contactus": "header__contact-contactus"
+    })
+    <div class="wrapper">
+      <main class="content">
+        <div class="container breadcrumps-wrap">
+          @@include('blocks/breadcrumps.html', {
+            "mainTitle": "Category Products",
+            "title": "breadcrumps__title"
+          })
+          <li class="breadcrumps__item"><a href="Catalog.html"><p class="breadcrumps__item-text breadcrumps__item-catalog-fortoys-V2">Catalog</p></a></li>
+        </div>
+        <div class="container product all-products">
+          <ul class="product__list product__list-catalog">
+            <li class="product__list-item1 product__list-item-catalog">
+              <a href="#" class="img-first"><img src="img/apparelkids.jpg" alt="apparel kids" width="280" height="270" class="img-catalog"></a>
+              <a href="#" class="title-first title-first-catalog">APPAREL KIDS</a>
+            </li>
+            <li class="product__list-item2 product__list-item-catalog">
+              <a href="#" class="img-second"><img src="img/holidayshop.jpg" alt="holidayshop" width="280" height="270" class="img-catalog"></a>
+              <a href="#" class="title-second title-second-catalog">HOLIDAY SHOP</a>
+            </li>
+            <li class="product__list-item3 product__list-item3-catalog">
+              <a href="Toys.html" class="img-third"><img src="img/toys.jpg" alt="toys" width="280" height="270" class="img-catalog"></a>
+              <a href="Toys.html" class="title-third title-third-catalog">TOYS</a>
+            </li>
+            <li class="product__list-item4 product__list-item4-catalog">
+              <a href="#" class="img-fourth"><img src="img/accessories.jpg" alt="accessories" width="280" height="270" class="img-catalog"></a>
+              <a href="#" class="title-fourth title-fourth-catalog">ACCESSORIES</a>
+            </li>
+            <li class="product__list-item5 product__list-item5-catalog">
+              <a href="#" class="img-fifth"><img src="img/sale.jpg" alt="sale" width="280" height="270" class="img-catalog"></a>
+              <a href="#" class="title-fifth-catalog">SALE</a>
+            </li>
+            <li class="product__list-item6 product__list-item6-catalog">
+              <a href="#" class="img-sixth"><img src="img/appareladults.jpg" alt="apparel adults" width="280" height="270" class="img-catalog"></a>
+              <a href="#" class="title-sixth-catalog">APPAREL ADULTS</a>
+            </li>
+          </ul>
+        </div>
+        <section class="container product-description">
+          <h4 class="product-description__title">Product Description</h4>
+          <p class="product-description__firstp">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+          <p class="product-description__secondp">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+          <p class="product-description__thirdp">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+      </section>
+      </main>
+      @@include('blocks/footer.html')
+    </div>
+    <script src="js/app.js" defer></script>
+    <script src="js/stars.js" defer></script>
+    <script src="js/burger.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+  </body>
+</html>
